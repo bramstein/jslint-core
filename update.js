@@ -26,7 +26,7 @@ function getOptions(data) {
 }
 
 var io = require('file'),
-	data = io.read('lib/fulljslint.js'),
+	os = require('os'),
 	packageDescription = {
 		name: "fulljslint",
 		maintainers: [{
@@ -48,6 +48,10 @@ var io = require('file'),
 		version: "2010-04-06"
 	},
 	output, version, options;
+
+os.command('wget -O lib/fulljslint.js http://www.jslint.com/fulljslint.js');
+
+data = io.read('lib/fulljslint.js');
 
 if (!data.match('exports.JSLINT =')) {
 	version = getVersion(data);
