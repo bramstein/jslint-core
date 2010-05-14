@@ -17,7 +17,7 @@ function getOptions(data) {
 		if (m) {
 			options.push({
 				name: m[1],
-				value: m[2],
+				value: m[2] === 'true',
 				description: m[3]
 			});
 		}
