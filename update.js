@@ -63,6 +63,7 @@ if (!data.match('exports.JSLINT =')) {
 	output.writeLine('exports.options = ' + JSON.stringify(options, null, '\t') + ';');
 	output.writeLine('exports.version = \'' + version + '\';');
 	output.flush();
+	output.close();
 
 	// This doesn't meet the CommonJS requirements for version numbers, but we can't
 	// just make up a version number for JSLint. Got to use what we have.
@@ -71,4 +72,5 @@ if (!data.match('exports.JSLINT =')) {
 	output = io.open('package.json', 'w');
 	output.writeLine(JSON.stringify(packageDescription, null, '\t'));
 	output.flush();
+	output.close();
 }
