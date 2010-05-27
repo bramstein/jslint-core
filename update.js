@@ -44,8 +44,7 @@ var io = require('file'),
 		}],
 		homepage: "http://jslint.com/",
 		description: "The JavaScript Code Quality Tool",
-		keywords: ["JavaScript", "lint", "jslint"],
-		version: "2010-04-06"
+		keywords: ["JavaScript", "lint", "jslint"]
 	},
 	output, version, options;
 
