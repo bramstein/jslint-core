@@ -1,5 +1,5 @@
 {
-	"name": "fulljslint",
+	"name": "jslint-core",
 	"maintainers": [
 		{
 			"name": "Douglas Crockford",
@@ -22,7 +22,9 @@
 	"keywords": [
 		"JavaScript",
 		"lint",
-		"jslint"
+		"jslint",
+		"jslint-core",
+		"fulljslint"
 	],
 	"version": "2010-04-06"
 }

@@ -28,7 +28,7 @@ function getOptions(data) {
 var io = require('file'),
 	os = require('os'),
 	packageDescription = {
-		name: "fulljslint",
+		name: "jslint-core",
 		maintainers: [{
 			name: "Douglas Crockford",
 			web: "http://www.crockford.com/"
@@ -44,18 +44,18 @@ var io = require('file'),
 		}],
 		homepage: "http://jslint.com/",
 		description: "The JavaScript Code Quality Tool",
-		keywords: ["JavaScript", "lint", "jslint"]
+		keywords: ["JavaScript", "lint", "jslint", "jslint-core", "fulljslint"]
 	},
 	output, version, options;
 
-os.command('wget -O lib/fulljslint.js http://www.jslint.com/fulljslint.js');
+os.command('wget -O lib/jslint-core.js http://www.jslint.com/fulljslint.js');
 
-data = io.read('lib/fulljslint.js');
+data = io.read('lib/jslint-core.js');
 
 if (!data.match('exports.JSLINT =')) {
 	version = getVersion(data);
 	options = getOptions(data);
-	output = io.open('lib/fulljslint.js', 'w');
+	output = io.open('lib/jslint-core.js', 'w');
 
 	output.writeLine(data);
 	output.writeLine('exports.JSLINT = JSLINT;');
