@@ -1,5 +1,6 @@
 {
 	"name": "jslint-core",
+	"author": "Bram Stein (b.l.stein@gmail.com)",
 	"maintainers": [
 		{
 			"name": "Douglas Crockford",
@@ -17,6 +18,10 @@
 			"url": "http://www.jslint.com/fulljslint.js"
 		}
 	],
+	"directories": {
+		"lib": "./lib"
+	},
+	"main": "./lib/jslint-core",
 	"homepage": "http://jslint.com/",
 	"description": "The JavaScript Code Quality Tool",
 	"keywords": [
@@ -26,5 +31,7 @@
 		"jslint-core",
 		"fulljslint"
 	],
-	"version": "2010-10-26"
+
+	"edition": "2010-10-26"
+	"version": "1.0.0"
 }
