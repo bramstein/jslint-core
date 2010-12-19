@@ -32,6 +32,6 @@
 		"fulljslint"
 	],
 
-	"edition": "2010-10-26"
+	"edition": "2010-10-26",
 	"version": "1.0.0"
 }
