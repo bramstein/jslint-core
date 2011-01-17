@@ -9,4 +9,4 @@ Supported features:
    - nolint: Do not perform lint on files or blocks
  * Up to date with official releases from Douglas Crockford
 
-JSLint packaged as a Node.js module. This project is now maintained at: https://github.com/One-com/jslint-core
+JSLint packaged as a Node.js module. This project is now maintained at: <a href="https://github.com/One-com/jslint-core">https://github.com/One-com/jslint-core</a>
